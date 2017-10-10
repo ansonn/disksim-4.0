@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{18591E37-0658-4D76-839C-41FAC9806832}</ProjectGuid>
+    <RootNamespace>disksimlib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\deprecated\deprecated.vcxproj">
+      <Project>{8fcbed79-ccfe-49ef-90eb-04d38cfe6dff}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\diskmodel\diskmodel.vcxproj">
+      <Project>{d161a777-bca1-4665-8d59-e8f1ded596b7}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libdbg\libdbg.vcxproj">
+      <Project>{b90d194e-8664-487c-a1fe-f1ca0b03b169}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libparam\libparam.vcxproj">
+      <Project>{b4bca8c3-d980-42ef-b24b-3c40abdef9b4}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\memsmodel\memsmodel.vcxproj">
+      <Project>{a6b73867-260a-4be7-9a0e-38e21e514903}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ssdmodel\ssdmodel.vcxproj">
+      <Project>{94c48629-b43b-456f-a1f8-9c24906bf27e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\disksim.c" />
+    <ClCompile Include="..\..\src\disksim_bus.c" />
+    <ClCompile Include="..\..\src\disksim_cache.c" />
+    <ClCompile Include="..\..\src\disksim_cachedev.c" />
+    <ClCompile Include="..\..\src\disksim_cachemem.c" />
+    <ClCompile Include="..\..\src\disksim_controller.c" />
+    <ClCompile Include="..\..\src\disksim_ctlrdumb.c" />
+    <ClCompile Include="..\..\src\disksim_ctlrsmart.c" />
+    <ClCompile Include="..\..\src\disksim_device.c" />
+    <ClCompile Include="..\..\src\disksim_disk.c" />
+    <ClCompile Include="..\..\src\disksim_diskcache.c" />
+    <ClCompile Include="..\..\src\disksim_diskctlr.c" />
+    <ClCompile Include="..\..\src\disksim_interface.c" />
+    <ClCompile Include="..\..\src\disksim_intr.c" />
+    <ClCompile Include="..\..\src\disksim_iodriver.c" />
+    <ClCompile Include="..\..\src\disksim_ioqueue.c" />
+    <ClCompile Include="..\..\src\disksim_iosim.c" />
+    <ClCompile Include="..\..\src\disksim_iotrace.c" />
+    <ClCompile Include="..\..\src\disksim_loadparams.c" />
+    <ClCompile Include="..\..\src\disksim_logorg.c" />
+    <ClCompile Include="..\..\src\disksim_main.c" />
+    <ClCompile Include="..\..\src\disksim_malloc.c" />
+    <ClCompile Include="..\..\src\disksim_pfdisp.c" />
+    <ClCompile Include="..\..\src\disksim_pfsim.c" />
+    <ClCompile Include="..\..\src\disksim_rand48.c" />
+    <ClCompile Include="..\..\src\disksim_redun.c" />
+    <ClCompile Include="..\..\src\disksim_simpledisk.c" />
+    <ClCompile Include="..\..\src\disksim_stat.c" />
+    <ClCompile Include="..\..\src\disksim_statload.c" />
+    <ClCompile Include="..\..\src\disksim_synthio.c" />
+    <ClCompile Include="..\..\src\modules\disksim_bus_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_bus_stats_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_cachedev_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_cachemem_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_ctlr_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_ctlr_stats_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_device_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_device_stats_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_disk_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_global_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_iodriver_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_iodriver_stats_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_iomap_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_ioqueue_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_iosim_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_logorg_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_pf_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_pf_stats_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_simpledisk_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_stats_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_syncset_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_synthgen_param.c" />
+    <ClCompile Include="..\..\src\modules\disksim_synthio_param.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\config.h" />
+    <ClInclude Include="..\..\src\disksim_assertlib.h" />
+    <ClInclude Include="..\..\src\disksim_bitstring.h" />
+    <ClInclude Include="..\..\src\disksim_bus.h" />
+    <ClInclude Include="..\..\src\disksim_cache.h" />
+    <ClInclude Include="..\..\src\disksim_cachedev.h" />
+    <ClInclude Include="..\..\src\disksim_cachemem.h" />
+    <ClInclude Include="..\..\src\disksim_controller.h" />
+    <ClInclude Include="..\..\src\disksim_ctlr.h" />
+    <ClInclude Include="..\..\src\disksim_device.h" />
+    <ClInclude Include="..\..\src\disksim_disk.h" />
+    <ClInclude Include="..\..\src\disksim_diskmap.h" />
+    <ClInclude Include="..\..\src\disksim_global.h" />
+    <ClInclude Include="..\..\src\disksim_hptrace.h" />
+    <ClInclude Include="..\..\src\disksim_interface.h" />
+    <ClInclude Include="..\..\src\disksim_interface_private.h" />
+    <ClInclude Include="..\..\src\disksim_iodriver.h" />
+    <ClInclude Include="..\..\src\disksim_ioface.h" />
+    <ClInclude Include="..\..\src\disksim_ioqueue.h" />
+    <ClInclude Include="..\..\src\disksim_iosim.h" />
+    <ClInclude Include="..\..\src\disksim_iotrace.h" />
+    <ClInclude Include="..\..\src\disksim_logorg.h" />
+    <ClInclude Include="..\..\src\disksim_malloc.h" />
+    <ClInclude Include="..\..\src\disksim_orgface.h" />
+    <ClInclude Include="..\..\src\disksim_pfface.h" />
+    <ClInclude Include="..\..\src\disksim_pfsim.h" />
+    <ClInclude Include="..\..\src\disksim_rand48.h" />
+    <ClInclude Include="..\..\src\disksim_reqflags.h" />
+    <ClInclude Include="..\..\src\disksim_simpledisk.h" />
+    <ClInclude Include="..\..\src\disksim_stat.h" />
+    <ClInclude Include="..\..\src\disksim_synthio.h" />
+    <ClInclude Include="..\..\src\inline.h" />
+    <ClInclude Include="..\..\src\inst.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

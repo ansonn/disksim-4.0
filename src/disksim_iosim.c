@@ -102,7 +102,7 @@
 #include "disksim_iosim.h"
 
 #include "modules/modules.h"
-
+#include <stdint.h>
 
 
 

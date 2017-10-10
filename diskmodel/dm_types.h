@@ -41,7 +41,7 @@ extern "C" {
 #ifdef _DISKMODEL_FREEBSD // || defined _BSD_SOURCE
 #include <sys/types.h>
 #else
-#ifdef WIN32
+#if !defined(_WIN64)
 typedef __int64 int64_t;
 typedef unsigned __int64 uint64_t;
 typedef unsigned __int32 uint32_t;

@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source files">
+      <UniqueIdentifier>{d1b92450-39ff-4ef4-bf25-a99d6478e7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a62e1017-0909-4762-8a5a-e12a0eda1961}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\disksim.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_bus.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_bus_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_bus_stats_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_cache.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_cachedev.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_cachedev_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_cachemem.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_cachemem_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_controller.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_ctlr_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_ctlr_stats_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_ctlrdumb.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_ctlrsmart.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_device.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_device_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_device_stats_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_disk.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_disk_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_diskcache.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_diskctlr.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_global_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_interface.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_intr.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_iodriver.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_iodriver_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_iodriver_stats_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_iomap_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_ioqueue.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_ioqueue_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_iosim.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_iosim_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_iotrace.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_loadparams.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_logorg.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_logorg_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_main.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_malloc.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_pf_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_pf_stats_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_pfdisp.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_pfsim.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_rand48.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_redun.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_simpledisk.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_simpledisk_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_stat.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_statload.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_stats_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_syncset_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_synthgen_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\disksim_synthio.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\disksim_synthio_param.c">
+      <Filter>source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_assertlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_bitstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_bus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_cachedev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_cachemem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_ctlr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_disk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_diskmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_hptrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_interface_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_iodriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_ioface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_ioqueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_iosim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_iotrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_logorg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_malloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_orgface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_pfface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_pfsim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_rand48.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_reqflags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_simpledisk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_stat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\disksim_synthio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\inst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

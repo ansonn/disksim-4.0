@@ -41,13 +41,12 @@
 
 #ifndef WIN32
 #include <unistd.h>
+#include <libgen.h>
 #else
 #include <io.h>
 #endif
 
 #include <fcntl.h>
-
-#include <libgen.h>
 
 #include "libparam.h"
 #include "bitvector.h"

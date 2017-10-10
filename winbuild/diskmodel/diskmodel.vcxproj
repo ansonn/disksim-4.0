@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D161A777-BCA1-4665-8D59-E8F1DED596B7}</ProjectGuid>
+    <RootNamespace>diskmodel</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\diskmodel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_DM_SOURCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\diskmodel\convert.c" />
+    <ClCompile Include="..\..\diskmodel\dm_load.c" />
+    <ClCompile Include="..\..\diskmodel\layout_g1.c" />
+    <ClCompile Include="..\..\diskmodel\layout_g1_load.c" />
+    <ClCompile Include="..\..\diskmodel\layout_g2.c" />
+    <ClCompile Include="..\..\diskmodel\layout_g2_load.c" />
+    <ClCompile Include="..\..\diskmodel\layout_g4.c" />
+    <ClCompile Include="..\..\diskmodel\layout_g4_load.c" />
+    <ClCompile Include="..\..\diskmodel\marshal.c" />
+    <ClCompile Include="..\..\diskmodel\mech_g1.c" />
+    <ClCompile Include="..\..\diskmodel\mech_g1_load.c" />
+    <ClCompile Include="..\..\diskmodel\mech_g1_seektime.c" />
+    <ClCompile Include="..\..\diskmodel\modules\dm_disk_param.c" />
+    <ClCompile Include="..\..\diskmodel\modules\dm_layout_g1_param.c" />
+    <ClCompile Include="..\..\diskmodel\modules\dm_layout_g1_zone_param.c" />
+    <ClCompile Include="..\..\diskmodel\modules\dm_layout_g2_param.c" />
+    <ClCompile Include="..\..\diskmodel\modules\dm_layout_g2_zone_param.c" />
+    <ClCompile Include="..\..\diskmodel\modules\dm_layout_g4_param.c" />
+    <ClCompile Include="..\..\diskmodel\modules\dm_mech_g1_param.c" />
+    <ClCompile Include="..\..\diskmodel\pbn.c" />
+    <ClCompile Include="..\..\diskmodel\sqrt.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\diskmodel\dm.h" />
+    <ClInclude Include="..\..\diskmodel\dm_config.h" />
+    <ClInclude Include="..\..\diskmodel\dm_types.h" />
+    <ClInclude Include="..\..\diskmodel\layout_g1.h" />
+    <ClInclude Include="..\..\diskmodel\layout_g2.h" />
+    <ClInclude Include="..\..\diskmodel\layout_g4.h" />
+    <ClInclude Include="..\..\diskmodel\layout_g4_private.h" />
+    <ClInclude Include="..\..\diskmodel\marshal.h" />
+    <ClInclude Include="..\..\diskmodel\mech_g1.h" />
+    <ClInclude Include="..\..\diskmodel\mech_g1_private.h" />
+    <ClInclude Include="..\..\diskmodel\modules\dm_disk_param.h" />
+    <ClInclude Include="..\..\diskmodel\modules\dm_layout_g1_param.h" />
+    <ClInclude Include="..\..\diskmodel\modules\dm_layout_g1_zone_param.h" />
+    <ClInclude Include="..\..\diskmodel\modules\dm_layout_g2_param.h" />
+    <ClInclude Include="..\..\diskmodel\modules\dm_layout_g2_zone_param.h" />
+    <ClInclude Include="..\..\diskmodel\modules\dm_layout_g4_param.h" />
+    <ClInclude Include="..\..\diskmodel\modules\dm_mech_g1_param.h" />
+    <ClInclude Include="..\..\diskmodel\modules\modules.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libdbg\libdbg.vcxproj">
+      <Project>{b90d194e-8664-487c-a1fe-f1ca0b03b169}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
